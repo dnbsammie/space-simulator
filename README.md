@@ -1,5 +1,5 @@
 <h1 align="center">RETO 1 - Simulador de Viaje Interplanetario</h1>
-<img src="./assets/banner.png" width="100%"></img>
+<img src="banner.png" width="100%"></img>
 <h3>Introducción</h3>
 <p align="center">
   <a href="https://github.com/dnbsammie/Reto01/issues">
