@@ -7,10 +7,12 @@ module com.dnbsammie.spacesimulator {
     requires org.controlsfx.controls;
     requires org.kordamp.ikonli.javafx;
     requires eu.hansolo.tilesfx;
+    requires transitive javafx.graphics;
 
     opens com.dnbsammie.spacesimulator.ui to javafx.fxml;
     opens com.dnbsammie.spacesimulator.data to com.google.gson;
 
     exports com.dnbsammie.spacesimulator.app;
+
     opens com.dnbsammie.spacesimulator.app to javafx.fxml;
 }

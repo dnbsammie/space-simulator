@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentación del proyecto
+    url: https://github.com/dnbsammie/space-simulator#readme
+    about: Revisa la documentación antes de abrir un nuevo issue.
