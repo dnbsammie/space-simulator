@@ -15,7 +15,7 @@
 <h3>Descripción:</h3>
 <p>Desarrollar un simulador de viaje interplanetario, donde se gestionará un viaje espacial a diferentes planetas del sistema solar. El usuario obtendrá la experiencia de elegir el destino, gestionar recursos de la nave, calcular tiempo de viaje y resolver conflictos a medida que los eventos se vuelven más complejos.</p>
 
-<p>Puedes encontrar el link de la presentación <a href="https://youtu.be/VV7WT9pXnbc">acá mismo 🎥</a></p>
+<p>Puedes encontrar el link de la presentación <a href="https://youtu.be/VV7WT9pXnbc" target="_blank">acá mismo 🎥</a></p>
 
 <h3 align="left">Lenguajes y herramientas:</h3>
 
