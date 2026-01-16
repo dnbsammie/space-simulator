@@ -9,6 +9,10 @@ jobs:
   release:
     runs-on: windows-latest
 
+    defaults:
+      run:
+        working-directory: spacesimulator
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,4 +38,4 @@ jobs:
       - name: Create GitHub Release and upload EXE
         uses: softprops/action-gh-release@v2
         with:
-          files: target\installer\*.exe
+          files: spacesimulator\target\installer\*.exe

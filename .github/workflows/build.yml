@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: windows-latest
 
+    defaults:
+      run:
+        working-directory: spacesimulator
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: SpaceSimulator-Windows
-          path: target\installer\*.exe
+          path: spacesimulator\target\installer\*.exe
