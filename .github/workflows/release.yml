@@ -21,15 +21,15 @@ jobs:
           cache: maven
 
       - name: Build runtime image
-        run: ./mvnw clean javafx:jlink
+        run: mvnw.cmd clean javafx:jlink
 
       - name: Package executable
         run: |
           jpackage ^
             --type exe ^
             --name SpaceSimulator ^
-            --runtime-image target/SpaceSimulator ^
-            --dest target/installer
+            --runtime-image target\SpaceSimulator ^
+            --dest target\installer
 
       - name: Create GitHub Release and upload EXE
         uses: softprops/action-gh-release@v2
