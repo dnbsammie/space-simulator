@@ -21,17 +21,14 @@ jobs:
           cache: maven
 
       - name: Build runtime image
-        shell: pwsh
-        run: |
-          .\mvnw.cmd clean javafx:jlink
+        run: mvn clean javafx:jlink
 
       - name: Package executable
-        shell: pwsh
         run: |
-          jpackage `
-            --type exe `
-            --name SpaceSimulator `
-            --runtime-image target\SpaceSimulator `
+          jpackage ^
+            --type exe ^
+            --name SpaceSimulator ^
+            --runtime-image target\SpaceSimulator ^
             --dest target\installer
 
       - name: Create GitHub Release and upload EXE

@@ -22,22 +22,17 @@ jobs:
           cache: maven
 
       - name: Build project
-        shell: pwsh
-        run: |
-          .\mvnw.cmd clean package
+        run: mvn clean package
 
       - name: Create runtime image (jlink)
-        shell: pwsh
-        run: |
-          .\mvnw.cmd clean javafx:jlink
+        run: mvn clean javafx:jlink
 
       - name: Create Windows executable with jpackage
-        shell: pwsh
         run: |
-          jpackage `
-            --type exe `
-            --name SpaceSimulator `
-            --runtime-image target\SpaceSimulator `
+          jpackage ^
+            --type exe ^
+            --name SpaceSimulator ^
+            --runtime-image target\SpaceSimulator ^
             --dest target\installer
 
       - name: Upload executable as artifact
