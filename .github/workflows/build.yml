@@ -22,21 +22,26 @@ jobs:
           cache: maven
 
       - name: Build project
-        run: mvnw.cmd clean package
+        shell: pwsh
+        run: |
+          .\mvnw.cmd clean package
 
       - name: Create runtime image (jlink)
-        run: mvnw.cmd clean javafx:jlink
+        shell: pwsh
+        run: |
+          .\mvnw.cmd clean javafx:jlink
 
       - name: Create Windows executable with jpackage
+        shell: pwsh
         run: |
-          jpackage ^
-            --type exe ^
-            --name SpaceSimulator ^
-            --runtime-image target\SpaceSimulator ^
+          jpackage `
+            --type exe `
+            --name SpaceSimulator `
+            --runtime-image target\SpaceSimulator `
             --dest target\installer
 
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v4
         with:
           name: SpaceSimulator-Windows
-          path: target/installer/*.exe
+          path: target\installer\*.exe
