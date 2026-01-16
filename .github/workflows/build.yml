@@ -32,12 +32,7 @@ jobs:
         run: mvn clean javafx:jlink
 
       - name: Create Windows executable with jpackage
-        run: |
-          jpackage ^
-            --type exe ^
-            --name SpaceSimulator ^
-            --runtime-image target\SpaceSimulator ^
-            --dest target\installer
+        run: jpackage --type exe --name SpaceSimulator --runtime-image target\SpaceSimulator --dest target\installer
 
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v4
