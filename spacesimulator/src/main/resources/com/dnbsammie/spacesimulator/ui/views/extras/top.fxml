@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import org.kordamp.ikonli.javafx.FontIcon?>-->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.dnbsammie.spacesimulator.ui.settings.SettingsController"
+      alignment="CENTER"
+      spacing="10"
+      styleClass="settings-top">
+    <Button onAction="#returnToMenu">
+<!--        <graphic>-->
+<!--            <FontIcon iconLiteral="mdi-arrow-left"/>-->
+<!--        </graphic>-->
+        <text>Back to Menu</text>
+    </Button>
+
+    <HBox alignment="CENTER_LEFT" spacing="8">
+<!--        <FontIcon iconLiteral="mdi-cog" iconSize="20"/>-->
+        <VBox>
+            <Label text="System Configuration" styleClass="title"/>
+            <Label text="Sector 7" styleClass="subtitle"/>
+        </VBox>
+    </HBox>
+
+    <Pane HBox.hgrow="ALWAYS"/>
+</HBox>
+

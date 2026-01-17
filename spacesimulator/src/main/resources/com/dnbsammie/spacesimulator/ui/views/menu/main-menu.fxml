@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import org.kordamp.ikonli.javafx.FontIcon?>-->
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane id="mainMenu" fx:id="mainMenu" minHeight="360.0" minWidth="640.0" styleClass="mainMenu" stylesheets="@../../styles/base.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dnbsammie.spacesimulator.ui.menu.MainMenuController">
+   <top>
+       <HBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
+           <Label text="SYSTEM: 0.0.1">
+              <font>
+                  <Font name="Martian Mono Regular" size="12.0" />
+              </font>
+           </Label>
+<!--           <FontIcon iconLiteral="fa-wifi" iconSize="24"/>-->
+       </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" stylesheets="@../../styles/base.css" BorderPane.alignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Space" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Simulator" />
+            <Label text="Label" />
+            <Label text="Label" />
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+    <bottom>
+        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+                <Button mnemonicParsing="false" onAction="#onStartTravel" stylesheets="@../../styles/buttons.css" text="Start Travel" />
+                <Button mnemonicParsing="false" onAction="#onSettings" stylesheets="@../../styles/buttons.css" text="Settings" />
+                <Button mnemonicParsing="false" stylesheets="@../../styles/buttons.css" text="Extras" />
+                <Button mnemonicParsing="false" onAction="#onExit" stylesheets="@../../styles/buttons.css" text="Exit Simulator" />
+        </HBox>
+    </bottom>
+</BorderPane>

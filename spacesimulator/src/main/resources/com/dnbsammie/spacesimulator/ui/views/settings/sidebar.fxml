@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.dnbsammie.spacesimulator.ui.settings.SettingsController"
+      spacing="10"
+      styleClass="settings-sidebar">
+
+    <Label text="Categories" styleClass="sidebar-title"/>
+
+    <Button text="Video" onAction="#onVideoSettings"/>
+    <Button text="Interface" onAction="#onInterfaceSettings"/>
+    <Button text="Profile" onAction="#onProfileSettings"/>
+
+</VBox>
+

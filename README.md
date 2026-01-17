@@ -117,7 +117,6 @@ spacesimulator/
 │ │ ├─ java/
 │ │ │ ├─ com.dnbsammie.spacesimulador/
 │ │ │ │ ├─ app/				# Punto de entrada
-│ │ │ │ │ ├─ Launcher.java
 │ │ │ │ │ └─ SpaceSimulatorApp.java
 │ │ │ │ │
 │ │ │ │ ├─ core/			# Reglas del simulador
@@ -145,9 +144,15 @@ spacesimulator/
 │ │ │ │ │ └─ LoggerFactory.java
 │ │ │ │ │
 │ │ │ │ └─ ui/				# JavaFX, Controladores
+│ │ │ │   ├─ extras/
+│ │ │ │   ├─ menu/
+│ │ │ │   ├─ settings/
+│ │ │ │   ├─ travel/
+│ │ │ │   ├─ BaseController.java
 │ │ │ │   ├─ HudController.java
 │ │ │ │   ├─ MainController.java
-│ │ │ │   └─ NavigationController.java
+│ │ │ │   ├─ NavigationController.java
+│ │ │ │   └─ ViewType.java
 │ │ │ │
 │ │ │ └─ module-info.java
 │ │ │
@@ -158,12 +163,12 @@ spacesimulator/
 │ │       │ ├─ questions.json
 │ │       │ └─ spaceships.json
 │ │       │
-│ │       ├─ fonts/
 │ │       ├─ ui/
-│ │       │ └─ styles.css
-│ │       │
-│ │       ├─ views/
-│ │       │ └─ main-view.fxml
+│ │       │ ├─ fonts/           # .ttf
+│ │       │ ├─ icons/           # Ikonli
+│ │       │ ├─ images/
+│ │       │ ├─ styles/          # .css
+│ │       │ └─ views/           # .fxml              
 │ │       │
 │ │       └─ logback.xml 
 │ │ 

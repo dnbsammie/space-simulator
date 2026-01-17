@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("/com/dnbsammie/spacesimulator/ui/fonts/SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("/com/dnbsammie/spacesimulator/ui/fonts/SpaceMono-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "SpaceGrotesk";
+}
+
+.main-container {
+    -fx-background-color: #00111a;
+    -fx-padding: 0;
+}
+
+.mainMenu {
+    -fx-background-size: cover;
+}

@@ -113,9 +113,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>
-                                com.dnbsammie.spacesimulator/com.dnbsammie.spacesimulator.app.Launcher
-                            </mainClass>
+                            <mainClass>com.dnbsammie.spacesimulator.app.SpaceSimulatorApp</mainClass>
                             <launcher>SpaceSimulator</launcher>
                             <jlinkZipName>SpaceSimulator</jlinkZipName>
                             <jlinkImageName>SpaceSimulator</jlinkImageName>
@@ -132,5 +130,11 @@
                 <version>3.1.0</version>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
     </build>
 </project>
