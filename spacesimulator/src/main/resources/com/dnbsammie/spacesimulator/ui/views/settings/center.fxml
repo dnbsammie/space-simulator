@@ -2,17 +2,21 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-<ScrollPane fx:id="settingsScroll"
+<ScrollPane id="settingsScroll"
+            fx:id="settingsScroll"
             xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.dnbsammie.spacesimulator.ui.settings.SettingsController"
             fitToWidth="true">
 
-    <VBox fx:id="contentBox" spacing="40" padding="20">
-
+    <VBox fx:id="contentBox" spacing="40">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
         <!-- VIDEO -->
-        <VBox fx:id="videoSection" spacing="15">
+        <VBox id="videoSection" fx:id="videoSection" spacing="15">
             <VBox spacing="4">
                 <Label text="📺 Display Configuration" styleClass="block-title"/>
                 <Label text="Control how the simulator renders on your screen." styleClass="block-desc"/>
@@ -28,10 +32,36 @@
             </GridPane>
         </VBox>
 
-        <VBox fx:id="interfaceSection" spacing="15">
+        <VBox id="interfaceSection" fx:id="interfaceSection" spacing="15">
+            <VBox spacing="4">
+                <Label text="Interface Configuration" styleClass="block-title"/>
+                <Label text="Control how the simulator renders on your screen." styleClass="block-desc"/>
+                <Separator/>
+            </VBox>
+
+            <GridPane hgap="10" vgap="10">
+                <Label text="Screen Resolution:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <ComboBox GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Display Mode:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            </GridPane>
         </VBox>
 
-        <VBox fx:id="profileSection" spacing="15">
+        <VBox id="profileSection" fx:id="profileSection" spacing="15">
+            <VBox spacing="4">
+                <Label text="Profile" styleClass="block-title"/>
+                <Label text="Control how the simulator renders on your screen." styleClass="block-desc"/>
+                <Separator/>
+            </VBox>
+
+            <GridPane hgap="10" vgap="10">
+                <Label text="Screen Resolution:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <ComboBox GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Display Mode:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            </GridPane>
         </VBox>
 
     </VBox>

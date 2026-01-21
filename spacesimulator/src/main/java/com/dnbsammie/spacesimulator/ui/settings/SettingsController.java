@@ -8,7 +8,6 @@ import javafx.scene.layout.*;
 
 public class SettingsController extends BaseController {
     @FXML private ScrollPane settingsScroll;
-
     @FXML private VBox videoSection;
     @FXML private VBox interfaceSection;
     @FXML private VBox profileSection;
@@ -20,7 +19,7 @@ public class SettingsController extends BaseController {
     }
     // Top
     @FXML
-    private void returnToMenu() {goToMainMenu();}
+    private void onMainMenu() {goToMainMenu();}
     // Left - Sidebar
     @FXML
     private void onVideoSettings() {

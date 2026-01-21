@@ -10,7 +10,14 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.geometry.Insets?>
 
-<BorderPane id="mainMenu" fx:id="mainMenu" minHeight="360.0" minWidth="640.0" styleClass="mainMenu" stylesheets="@../../styles/base.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dnbsammie.spacesimulator.ui.menu.MainMenuController">
+<BorderPane id="mainMenu"
+            fx:id="mainMenu"
+            minHeight="360.0" minWidth="640.0"
+            styleClass="mainMenu"
+            stylesheets="@../../styles/base.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.dnbsammie.spacesimulator.ui.menu.MainMenuController">
    <top>
        <HBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
            <Label text="SYSTEM: 0.0.1">

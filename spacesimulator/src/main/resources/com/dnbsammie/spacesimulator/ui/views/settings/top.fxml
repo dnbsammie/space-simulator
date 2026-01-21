@@ -7,8 +7,7 @@
 <HBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.dnbsammie.spacesimulator.ui.settings.SettingsController"
       alignment="CENTER"
-      spacing="10"
-      styleClass="settings-top">
+      spacing="10">
 
     <HBox alignment="CENTER_LEFT" spacing="8">
 <!--        <FontIcon iconLiteral="mdi-cog" iconSize="20"/>-->
@@ -20,10 +19,5 @@
 
     <Pane HBox.hgrow="ALWAYS"/>
 
-    <Button onAction="#returnToMenu">
-        <graphic>
-<!--            <FontIcon iconLiteral="mdi-arrow-left"/>-->
-        </graphic>
-        <text>Back to Menu</text>
-    </Button>
+    <Button mnemonicParsing="false" onAction="#onMainMenu" stylesheets="@../../styles/buttons.css" text="Return To Menu" />
 </HBox>

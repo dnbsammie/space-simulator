@@ -44,4 +44,6 @@ public class SpaceSimulatorApp extends Application {
                 mainController.setNavigation(navigation);
                 navigation.start();
         }
+
+        public static void main(String[] args) {launch(args); }
 }

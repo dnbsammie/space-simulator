@@ -10,14 +10,12 @@ module com.dnbsammie.spacesimulator {
     requires transitive javafx.graphics;
     requires java.desktop;
 
+    opens com.dnbsammie.spacesimulator.app to javafx.fxml;
     opens com.dnbsammie.spacesimulator.ui to javafx.fxml;
     opens com.dnbsammie.spacesimulator.ui.menu to javafx.fxml;
     opens com.dnbsammie.spacesimulator.ui.settings to javafx.fxml;
     opens com.dnbsammie.spacesimulator.ui.views to javafx.fxml;
-
     opens com.dnbsammie.spacesimulator.data to com.google.gson;
 
     exports com.dnbsammie.spacesimulator.app;
-
-    opens com.dnbsammie.spacesimulator.app to javafx.fxml;
 }
